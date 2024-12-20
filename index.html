@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="SafeVision: Efficient Image Guardrail with Robust Policy Adherence and Explainability">
+  <meta property="og:title" content="SafeVision: Efficient Image Guardrail with Robust Policy Adherence and Explainability"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/images/icon1.jpg" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="SafeVision: Efficient Image Guardrail with Robust Policy Adherence and Explainability">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/icon1.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="AI safety, Large language model, Multi modality, Image Guardrail">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>SafeVision: Efficient Image Guardrail with Robust Policy Adherence and Explainability</title>
+  <link rel="icon" type="image/x-icon" href="static/images/icon2.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <div style="display: flex; align-items: center; justify-content: center;">
+              <img src="static/images/icon2.png" alt="Logo" style="margin-right: -20px; width: auto; height: 180px;">
+              <h1 class="title is-1 publication-title" style="font-size: 40px;">SafeVision: Efficient Image Guardrail with Robust Policy Adherence and Explainability</h1>
+            </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://openreview.net/profile?id=~Peiyang_Xu2" target="_blank">Peiyang Xu<sup>1</sup></a>,</span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=9Lrse8AAAAAJ&hl=en" target="_blank">Minzhou Pan<sup>2</sup></a>,</span>
+              <span class="author-block">
+                <a href="https://billchan226.github.io/" target="_blank">Zhaorun Chen<sup>3</sup></a>,</span>
+              <span class="author-block">
+                <a href="https://xiaocw11.github.io/" target="_blank">Chaowei Xiao<sup>4</sup></a>,</span>
+              <span class="author-block">
+                <a href="https://aisecure.github.io/" target="_blank">Bo Li<sup>2,3</sup></a></span>
+            </div>
+            
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup> Tsinghua University,</span>
+              <span class="author-block"><sup>2</sup> Virtue AI</span><br>
+              <span class="author-block"><sup>3</sup> University of Chicago,</span>
+              <span class="author-block"><sup>4</sup> University of Wisconsin, Madison</span><br>
+            </div>
+            
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/Safevision.jpg" alt="Banner Image" height="100%" />
+      <h2 class="subtitle has-text-centered">
+        Overview of SafeVision image guardrail system.
+      </h2>
+    </div>
+  </div>
+</section> -->
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Overview</h2>
+        <div class="content has-text-justified">
+          <p>
+With the proliferation of digital media, the need for efficient and transparent guardrails against unsafe content is more critical than ever. Traditional unsafe image classifiers, limited to predefined categories, often misclassify content due to the pure feature-based learning rather than semantic-based reasoning and struggle to adapt to emerging threats. The time and resources required for retraining on new harmful categories further hinder their ability to respond to evolving threats.<br><br>
+
+To address these limitations, we propose <strong>SafeVision</strong>, a novel image guardrail system that integrates human-like understanding and reasoning. 
+Within <strong>SafeVision</strong>, we propose an effective data collection and generation framework, a policy-following training pipeline, and a customized loss function. 
+In particular, we propose an efficient diverse QA generation and training strategy to enhance the training effectiveness.<br><br>
+
+In addition, considering the limitations of existing unsafe image benchmarks, which contain either only binary or limited categories,
+we provide <strong>VisionHarm-500K</strong>, a high-quality unsafe image benchmark comprising over 500k images to cover a wide array of risky categories. This dataset significantly broadens the scope and depth of unsafe image benchmarks.<br><br>
+
+Specifically, <br>
+<ul>
+  <li><strong>SafeVision</strong> operates in a dual model architecture consisting of a rapid <strong>classification mode</strong> for efficient screening, and a <strong>comprehension mode</strong> that provides both classifications and human-readable explanations. </li>
+  <li><strong>SafeVision</strong> achieves state-of-the-art performance, with an accuracy of <strong>91.85%</strong> on VisionHarm-500K (<strong>17.85% higher than GPT-4O</strong>) and an inference time of <strong>0.098 seconds</strong> per image (over <strong>50 times faster</strong> than GPT-4O).</li>
+  <li><strong>SafeVision</strong> is able to follow given safety policies during inference time to guardrail against <strong>new risk categories</strong> and thus avoid expensive retraining. </li>
+</ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3" style="margin-top: 20px;">VisionHarm-500K</h2>
+      <div class="content has-text-justified" style="font-size: 16px;">
+        <p>
+          <strong>VisionHarm-500K</strong> is a large-scale, diverse, and richly annotated dataset tailored specifically for training VLMs in image guardrail tasks. It consists of 500K images across a wide range of categories, providing <strong>detailed guardrail labels and explanations</strong>. The dataset supports multiple training objectives, making it an ideal resource for developing robust and versatile VLM-based guardrail models.
+        </p>
+      </div>
+      <img id="tree1" src="./static/images/DatasetPipeline.jpg" alt="VisionHarm-500K Creation Pipeline" style="width: 90%; height: auto; display: block; margin: auto;">
+      <div class="content has-text-justified" style="font-size: 16px;">
+        <p>
+        <br>
+          <strong>Data Collection(Top):</strong> First, a fine-tuned vision classifier performs initial filtering to flag potentially harmful images. Those flagged as potentially harmful (HARM) are then subjected to two additional filtering stages for increased precision. The first stage employs another <strong>vision classifier</strong>, while the second utilizes a <strong>VLM-based consistency filter</strong>. This process creates a highly concentrated harmful image dataset from a large-scale open-source collection.
+        </p>
+      </div>
+      <div class="content has-text-justified" style="font-size: 16px;">
+        <p>
+          <strong>QA Pair Generation(Bottom):</strong>  To better adapt the image data for guardrail training, we design a task-centric QA pair generation pipeline. For each image, we generate <strong>six distinct QA pairs</strong>. This approach enhances the model's ability to analyze harmful content, follow policies, and identify unsafe categories with varying levels of guidance. By providing more targeted prompts, this design improves model performance in image guardrail tasks, ensuring adherence to policies while preserving its general content understanding.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3" style="margin-top: 20px;">SafeVision</h2>
+      <img id="tree1" src="./static/images/Safevision.jpg" alt="Overview of SafeVision" style="width: 90%; height: auto; display: block; margin: auto;">
+      <div class="content has-text-justified" style="font-size: 16px;">
+        <br/>
+        <p>
+          To fully leverage VLMs as guardrail models, we introduce three key features in <strong>SafeVision</strong>:
+          <br>
+          <ul>
+            <li><strong>Customizable Guardrail Modes</strong>: SafeVision offers flexible guardrail modes—either label-only or label-with-explanation. This design enhances both efficiency and effectiveness by enabling users to choose the most suitable guardrail strategy for their tasks.</li>
+            <li><strong>Policy Adherence</strong>: SafeVision can flexibly adapt to new harmful categories by incorporating them into the prompt as part of an updated policy, minimizing the need for retraining. This allows the model to quickly respond to emerging harmful content and ensures ongoing compliance with updated guardrail guidelines.</li>
+            <li><strong>Structured Output with Lightning-Fast Speed</strong>: SafeVision delivers structured output with lightning-fast inference speeds under 100ms per image. By redesigning the tokenizer and refining the decoding process, we have significantly reduced latency, without sacrificing accuracy or reliability.</li>
+          </ul>
+          
+        </p>
+      </div>
+      <img id="tree1" src="./static/images/TrainingPipeline.jpg" alt="SafeVision Training Pipeline" style="width: 90%; height: auto; display: block; margin: auto;">
+      <div class="content has-text-justified" style="font-size: 16px;">
+        <br/>
+        <p>
+          <strong>Model & Policy Preparation (Left):</strong> We added 10 category names to the tokenizer's special token list, ensuring they are processed as single tokens during both encoding and decoding. This adjustment reduces the total number of tokens processed and provides more consistent interpretations. Additionally, we implemented an LLM-based Policy Parser to transform user-defined prompts into well-structured policy prompts, making them more suitable for processing by SafeVision.
+        </p>
+      </div>
+      <div class="content has-text-justified" style="font-size: 16px;">
+        <p>
+          <strong>Self-Refinement Training (Middle):</strong> We implement an iterative data cleaning and model fine-tuning procedure to enhance performance. Starting with the initial <strong>Dataset</strong>, <strong>Guardrail Policy</strong>, and <strong>Model</strong> (<strong>Version V0</strong>), we fine-tune the model using LoRA to obtain <strong>Model</strong> <strong>V1</strong>. Using <strong>Guardrail Policy</strong> <strong>V0</strong>, we evaluate <strong>Model</strong> <strong>V1</strong> on the test set and analyze misclassified instances with GPT-4O. if these misclassifications involve content not defined in the existing policy, we employ GPT-4O to update the policy, resulting in <strong>Guardrail Policy</strong> <strong>V1</strong>.
+          Next, we refine the dataset by filtering images through four VLMs. Each model's response is weighted, and images surpassing a cumulative threshold are retained. The weights are adjusted dynamically, starting lower for <strong>SafeVision</strong> and increasing as its accuracy improves. After this filtering, we obtain <strong>Dataset V1</strong>.
+          This process repeats iteratively, with the model, policy, and dataset refined in each round until the dataset size stabilizes or the model's performance no longer shows significant improvement.
+        </p>
+      </div>
+      <div class="content has-text-justified" style="font-size: 16px;">
+        <p>
+          <strong>Post-Training (Right):</strong> We apply post-tuning with a <strong>custom-weighted loss function</strong> to further enhance performance. Unlike traditional fine-tuning with cross-entropy loss, where all tokens contribute equally, we assign higher weights to critical tokens, such as category names, and lower weights to less important tokens, like image content. This custom loss function allows the model to focus more on key information, leading to improved guardrail accuracy.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3" style="margin-top: 20px;">Evaluation</h2>
+      <h3 class="title is-4" style="font-size: 18px;">Setting</h3>
+      <div class="content has-text-justified" style="font-size: 16px;">
+        <p>
+          To comprehensively evaluate <strong>SafeVision</strong>, we compare its two components—<strong>classification mode</strong> and <strong>comprehension mode</strong>—against nine <strong>classifier</strong> guardrail baselines and four state-of-the-art <strong>VLM</strong> guardrail baselines, respectively.
+          <br>
+          We use <strong>three multi-class datasets</strong>, each covering multiple unsafe categories, and <strong>six binary datasets</strong>, each focusing on a single unsafe image category, as our evaluation benchmark.
+        <br>
+        We evaluate models from three aspects: <strong>guardrail accuracy</strong>, <strong>inference speed</strong>, and <strong>explanation quality</strong>. Guardrail accuracy is measured using accuracy (<strong>ACC</strong>), while inference speed is assessed by calculating the average <strong>processing overhead</strong> per image across 1,000 images. To evaluate explanation quality, we employ the <strong>LLM-as-a-judge</strong> method, prompting GPT-4O to rate each model's explanations on a scale of 0-10 based on three criteria: precision, conciseness, and consistency with the image.
+
+      </p>
+      </div>
+      <h3 class="title is-4" style="font-size: 18px;">Main Results</h3>
+      <img id="tree1" src="./static/images/classifier.png" alt="Compare With Classifier Guardrail Models" style="width: 90%; height: auto; display: block; margin: auto;">
+      <div class="content has-text-justified" style="font-size: 16px;">
+        <p>
+          <br>
+          <strong>Compare With Classifier Guardrail Models:</strong> '-' indicates a category not covered by the model. <strong>SafeVision</strong> demonstrates superior performance across all binary benchmarks in terms of accuracy, surpassing even specialized models trained for specific tasks and commercial APIs such as Azure. Notably, despite its much larger parameter scale, <strong>SafeVision-8B</strong> achieves an inference time that is faster or comparable to all CNN-based and CLIP-based classifiers.
+        </p>
+      </div>
+      <img id="tree1" src="./static/images/vlm.png" alt="Compare with VLM Guardrail Models" style="width: 90%; height: auto; display: block; margin: auto;">
+      <div class="content has-text-justified" style="font-size: 16px;">
+        <p>
+          <br>
+          <strong>Compare with VLM Guardrail Models:</strong> <strong>SafeVision-8B</strong> demonstrate the best overall performance, achieving the highest average scores on both the multi-label dataset (0.710) and the single-label dataset (0.872). Notably, <strong>SafeVision-8B</strong> maintains competitive performance while boasting a significantly lower overhead of just 0.313 seconds per image. In terms of explanation quality, <strong>SafeVision-8B</strong> also demonstrates better performance, achieving scores 10.56% higher than GPT-4O, based on LLM evaluation.
+        </p>
+      </div>
+      <h3 class="title is-4" style="font-size: 18px;">New categories</h3>
+      <img id="tree1" src="./static/images/new_icl.png" alt="New categories" style="width: 90%; height: auto; display: block; margin: auto;">
+      <div class="content has-text-justified" style="font-size: 16px;">
+        <p>
+          <br>
+          We evaluate <strong>SafeVision-8B</strong> on two new unsafe categories, <strong>Gambling</strong> and <strong>Cults</strong>, to test its ability to apply guardrails to unseen categories based on the policy prompt and text demonstrations, without prior exposure.  <strong>SafeVision</strong> performs comparably to GPT-4O and InternVL-2 (the backbone model), while significantly outperforming the other two guardrail models, which exhibit poor policy adherence and weak zero-shot transferability.
+        </p>
+      </div>
+      <h3 class="title is-4" style="font-size: 18px;">Ablation</h3>
+      <img id="tree1" src="./static/images/ablation_backbone.png" alt="Ablation Study" style="width: 90%; height: auto; display: block; margin: auto;">
+      <div class="content has-text-justified" style="font-size: 16px;">
+        <p>
+          <br>
+          <ul>
+            <li><strong>Effect of weighted loss ratio in post-training stage</strong>: We assess the impact of our custom-weighted loss function by varying the contribution of critical tokens. The weight ratio controls the proportion of the critical token's contribution to the total loss during post-training. As shown in Figure (<span style="color: blue;">a</span>), increasing the weight ratio <strong>initially boosts</strong> performance. However, when the ratio becomes too high, model performance <strong>declines</strong> due to overfitting.</li>
+            <li><strong>Influence of few-shot example format in in-context learning</strong>: We employ four formats: (1) category name only, (2) category name with an explanation, (3) category name with a brief explanation in JSON, and (4) category name with a detailed explanation in JSON. As shown in Figure (<span style="color: blue;">b</span>), compared with GPT-4O and InternVL2, <strong>SafeVision-8B</strong>'s performance improves significantly with more detailed and structured examples. This suggests that comprehensive examples enhance <strong>SafeVision-8B</strong>'s understanding of novel categories, leading to better performance. Nonetheless, <strong>SafeVision-2B</strong> exhibits suboptimal performance across all four formats. A detailed analysis of the guardrail outputs reveals that <strong>SafeVision-2B</strong> tends to overfit to the predefined categories, consistently generating these categories even when presented with new definitions. Although the smaller parameter size of <strong>SafeVision-2B</strong> offers advantages in terms of faster inference and reduced deployment costs, this comes at the expense of its in-context learning capability, leading to diminished adaptability in novel scenarios.</li>
+            <li><strong>Impact of few-shot example number in in-context learning</strong>: We analyze how varying the number of examples (0 to 10) affects model performance. As shown in Figure (<span style="color: blue;">c</span>), the performance of GPT-4O and InternVL2 remains relatively stable across different example quantities, while <strong>SafeVision-2B</strong> continues to underperform. In contrast, <strong>SafeVision-8B</strong>'s performance generally improves with more examples, reaches its peak with four examples, and deteriorates when provided with too many demonstrations. This indicates that an excessive number may cause <strong>SafeVision-8B</strong> to overly focus on the examples, detracting from its ability to generalize to new categories.</li>
+            <li><strong>Effectiveness of self-refinement training</strong>: We applied self-refinement training to a subset of <strong>VisionHarm-500K</strong> over multiple epochs, tracking both the percentage of remaining data and <strong>SafeVision</strong>'s performance at each epoch. Figure (<span style="color: blue;">d</span>) shows that <strong>SafeVision</strong> experiences significant performance improvement during the first two epochs, with the percentage of removed data peaking in the second epoch. By the fourth epoch, the model's performance stabilizes, and the percentage of removed data gradually decreases to less than 1%.</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
