@@ -76,7 +76,51 @@
               <span class="author-block"><sup>4</sup> University of Wisconsin, Madison</span><br>
             </div>
             
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                   <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="https://xupy2003.github.io/SafeVision_Website/" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
 
+              <span class="link-block">
+                <a href="https://xupy2003.github.io/SafeVision_Website/" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>Code</span>
+              </a>
+            </span>
+
+              <!-- Dataset Link -->
+              <span class="link-block">
+                <a href="https://xupy2003.github.io/SafeVision_Website/" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fa fa-database"></i>
+                </span>
+                <span>Dataset</span>
+              </a>
+            </span>
+
+            <span class="link-block">
+              <a href="https://xupy2003.github.io/SafeVision_Website/"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <svg width="800px" height="800px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet"><ellipse fill="#F4900C" cx="33.5" cy="14.5" rx="2.5" ry="3.5"></ellipse><ellipse fill="#F4900C" cx="2.5" cy="14.5" rx="2.5" ry="3.5"></ellipse><path fill="#FFAC33" d="M34 19a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v9zM7 19a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v9z"></path><path fill="#FFCC4D" d="M28 5c0 2.761-4.478 4-10 4C12.477 9 8 7.761 8 5s4.477-5 10-5c5.522 0 10 2.239 10 5z"></path><path fill="#F4900C" d="M25 4.083C25 5.694 21.865 7 18 7c-3.866 0-7-1.306-7-2.917c0-1.611 3.134-2.917 7-2.917c3.865 0 7 1.306 7 2.917z"></path><path fill="#269" d="M30 5.5C30 6.881 28.881 7 27.5 7h-19C7.119 7 6 6.881 6 5.5S7.119 3 8.5 3h19A2.5 2.5 0 0 1 30 5.5z"></path><path fill="#55ACEE" d="M30 6H6a2 2 0 0 0-2 2v26h28V8a2 2 0 0 0-2-2z"></path><path fill="#3B88C3" d="M35 33v-1a2 2 0 0 0-2-2H22.071l-3.364 3.364a.999.999 0 0 1-1.414 0L13.929 30H3a2 2 0 0 0-2 2v1c0 1.104-.104 2 1 2h32c1.104 0 1-.896 1-2z"></path><circle fill="#FFF" cx="24.5" cy="14.5" r="4.5"></circle><circle fill="#DD2E44" cx="24.5" cy="14.5" r="2.721"></circle><circle fill="#FFF" cx="11.5" cy="14.5" r="4.5"></circle><path fill="#F5F8FA" d="M29 25.5a2.5 2.5 0 0 1-2.5 2.5h-17a2.5 2.5 0 1 1 0-5h17a2.5 2.5 0 0 1 2.5 2.5z"></path><path fill="#CCD6DD" d="M17 23h2v5h-2zm-5 0h2v5h-2zm10 0h2v5h-2zM7 25.5a2.5 2.5 0 0 0 2 2.45v-4.9a2.5 2.5 0 0 0-2 2.45zm20-2.45v4.899a2.5 2.5 0 0 0 0-4.899z"></path><circle fill="#DD2E44" cx="11.5" cy="14.5" r="2.721"></circle></svg>
+                </span>
+                <span>Model</span>
+              </a>
+            </span>   
+          </div>
+        </div>          
         </div>
       </div>
     </div>
@@ -112,7 +156,7 @@ we provide <strong>VisionHarm-500K</strong>, a high-quality unsafe image benchma
 Specifically, <br>
 <ul>
   <li><strong>SafeVision</strong> operates in a dual model architecture consisting of a rapid <strong>classification mode</strong> for efficient screening, and a <strong>comprehension mode</strong> that provides both classifications and human-readable explanations. </li>
-  <li><strong>SafeVision</strong> achieves state-of-the-art performance, with an accuracy of <strong>91.85%</strong> on VisionHarm-500K (<strong>17.85% higher than GPT-4O</strong>) and an inference time of <strong>0.098 seconds</strong> per image (over <strong>50 times faster</strong> than GPT-4O).</li>
+  <li><strong>SafeVision</strong> achieves state-of-the-art performance, with an accuracy of <strong>92.4%</strong> on VisionHarm-500K (<strong>18.4% higher than GPT-4o</strong>) and an inference time of <strong>0.313 seconds</strong> per image (over <strong>16 times faster</strong> than GPT-4o).</li>
   <li><strong>SafeVision</strong> is able to follow given safety policies during inference time to guardrail against <strong>new risk categories</strong> and thus avoid expensive retraining. </li>
 </ul>
           </p>
@@ -129,7 +173,7 @@ Specifically, <br>
       <h2 class="title is-3" style="margin-top: 20px;">VisionHarm-500K</h2>
       <div class="content has-text-justified" style="font-size: 16px;">
         <p>
-          <strong>VisionHarm-500K</strong> is a large-scale, diverse, and richly annotated dataset tailored specifically for training VLMs in image guardrail tasks. It consists of 500K images across a wide range of categories, providing <strong>detailed guardrail labels and explanations</strong>. The dataset supports multiple training objectives, making it an ideal resource for developing robust and versatile VLM-based guardrail models.
+          <strong>VisionHarm-500K</strong> is a large-scale, diverse, and richly annotated dataset tailored specifically for training VLMs in image guardrail tasks. It consists of 500K images across 10 content categories: <i>Safe, Hate, Violence, Sexual, Crime, Weapons Substance Abuse, Self Harm, Animal Cruelty, Disasters Emergencies, Political.</i> It provides <strong>detailed guardrail labels and explanations</strong> for each image. The dataset supports multiple training objectives, making it an ideal resource for developing robust and versatile VLM-based guardrail models.
         </p>
       </div>
       <img id="tree1" src="./static/images/DatasetPipeline.jpg" alt="VisionHarm-500K Creation Pipeline" style="width: 90%; height: auto; display: block; margin: auto;">
@@ -175,14 +219,14 @@ Specifically, <br>
       </div>
       <div class="content has-text-justified" style="font-size: 16px;">
         <p>
-          <strong>Self-Refinement Training (Middle):</strong> We implement an iterative data cleaning and model fine-tuning procedure to enhance performance. Starting with the initial <strong>Dataset</strong>, <strong>Guardrail Policy</strong>, and <strong>Model</strong> (<strong>Version V0</strong>), we fine-tune the model using LoRA to obtain <strong>Model</strong> <strong>V1</strong>. Using <strong>Guardrail Policy</strong> <strong>V0</strong>, we evaluate <strong>Model</strong> <strong>V1</strong> on the test set and analyze misclassified instances with GPT-4O. if these misclassifications involve content not defined in the existing policy, we employ GPT-4O to update the policy, resulting in <strong>Guardrail Policy</strong> <strong>V1</strong>.
+          <strong>Self-Refinement Training (Middle):</strong> We implement an iterative data cleaning and model fine-tuning procedure to enhance performance. Starting with the initial <strong>Dataset</strong>, <strong>Guardrail Policy</strong>, and <strong>Model</strong> (<strong>Version V0</strong>), we fine-tune the model using LoRA to obtain <strong>Model</strong> <strong>V1</strong>. Using <strong>Guardrail Policy</strong> <strong>V0</strong>, we evaluate <strong>Model</strong> <strong>V1</strong> on the test set and analyze misclassified instances with GPT-4o. if these misclassifications involve content not defined in the existing policy, we employ GPT-4o to update the policy, resulting in <strong>Guardrail Policy</strong> <strong>V1</strong>.
           Next, we refine the dataset by filtering images through four VLMs. Each model's response is weighted, and images surpassing a cumulative threshold are retained. The weights are adjusted dynamically, starting lower for <strong>SafeVision</strong> and increasing as its accuracy improves. After this filtering, we obtain <strong>Dataset V1</strong>.
           This process repeats iteratively, with the model, policy, and dataset refined in each round until the dataset size stabilizes or the model's performance no longer shows significant improvement.
         </p>
       </div>
       <div class="content has-text-justified" style="font-size: 16px;">
         <p>
-          <strong>Post-Training (Right):</strong> We apply post-tuning with a <strong>custom-weighted loss function</strong> to further enhance performance. Unlike traditional fine-tuning with cross-entropy loss, where all tokens contribute equally, we assign higher weights to critical tokens, such as category names, and lower weights to less important tokens, like image content. This custom loss function allows the model to focus more on key information, leading to improved guardrail accuracy.
+          <strong>Post-Training (Right):</strong> We apply post-tuning with a <strong>custom-weighted loss function</strong> to further enhance performance. Unlike traditional fine-tuning with cross-entropy loss, where all tokens contribute equally, we assign higher weights to critical tokens, such as category names, and lower weights to less important tokens, like image content. This custom loss function allows the model to focus more on key information. After fine-tuning with the custom-weighted loss, the model's performance is further enhanced using <strong>Direct Preference Optimization (DPO)</strong> by constructing training data from failure cases and incorrect outputs, leading to improved performance on image guardrail tasks.
         </p>
       </div>
     </div>
@@ -200,7 +244,7 @@ Specifically, <br>
           <br>
           We use <strong>three multi-class datasets</strong>, each covering multiple unsafe categories, and <strong>six binary datasets</strong>, each focusing on a single unsafe image category, as our evaluation benchmark.
         <br>
-        We evaluate models from three aspects: <strong>guardrail accuracy</strong>, <strong>inference speed</strong>, and <strong>explanation quality</strong>. Guardrail accuracy is measured using accuracy (<strong>ACC</strong>), while inference speed is assessed by calculating the average <strong>processing overhead</strong> per image across 1,000 images. To evaluate explanation quality, we employ the <strong>LLM-as-a-judge</strong> method, prompting GPT-4O to rate each model's explanations on a scale of 0-10 based on three criteria: precision, conciseness, and consistency with the image.
+        We evaluate models from three aspects: <strong>guardrail accuracy</strong>, <strong>inference speed</strong>, and <strong>explanation quality</strong>. Guardrail accuracy is measured using accuracy (<strong>ACC</strong>), while inference speed is assessed by calculating the average <strong>processing overhead</strong> per image across 1,000 images. To evaluate explanation quality, we employ the <strong>LLM-as-a-judge</strong> method, prompting GPT-4o to rate each model's explanations on a scale of 0-10 based on three criteria: precision, conciseness, and consistency with the image.
 
       </p>
       </div>
@@ -209,14 +253,14 @@ Specifically, <br>
       <div class="content has-text-justified" style="font-size: 16px;">
         <p>
           <br>
-          <strong>Compare With Classifier Guardrail Models:</strong> '-' indicates a category not covered by the model. <strong>SafeVision</strong> demonstrates superior performance across all binary benchmarks in terms of accuracy, surpassing even specialized models trained for specific tasks and commercial APIs such as Azure. Notably, despite its much larger parameter scale, <strong>SafeVision-8B</strong> achieves an inference time that is faster or comparable to all CNN-based and CLIP-based classifiers.
+          <strong>Compare With Classifier Guardrail Models:</strong> <strong>SafeVision</strong> demonstrates superior performance across all binary benchmarks in terms of accuracy, surpassing even specialized models trained for specific tasks and commercial APIs such as Azure. Notably, despite its much larger parameter scale, <strong>SafeVision-8B</strong> achieves an inference time that is faster or comparable to all CNN-based and CLIP-based classifiers.
         </p>
       </div>
       <img id="tree1" src="./static/images/vlm.png" alt="Compare with VLM Guardrail Models" style="width: 90%; height: auto; display: block; margin: auto;">
       <div class="content has-text-justified" style="font-size: 16px;">
         <p>
           <br>
-          <strong>Compare with VLM Guardrail Models:</strong> <strong>SafeVision-8B</strong> demonstrate the best overall performance, achieving the highest average scores on both the multi-label dataset (0.710) and the single-label dataset (0.872). Notably, <strong>SafeVision-8B</strong> maintains competitive performance while boasting a significantly lower overhead of just 0.313 seconds per image. In terms of explanation quality, <strong>SafeVision-8B</strong> also demonstrates better performance, achieving scores 10.56% higher than GPT-4O, based on LLM evaluation.
+          <strong>Compare with VLM Guardrail Models:</strong> <strong>SafeVision-8B</strong> demonstrate the best overall performance, achieving the highest average scores on both the multi-label dataset (0.733) and the single-label dataset (0.891). Notably, <strong>SafeVision-8B</strong> maintains competitive performance while boasting a significantly lower overhead of just 0.313 seconds per image. In terms of explanation quality, <strong>SafeVision-8B</strong> also demonstrates better performance, achieving scores 10.56% higher than GPT-4o, based on LLM evaluation.
         </p>
       </div>
       <h3 class="title is-4" style="font-size: 18px;">New categories</h3>
@@ -224,7 +268,7 @@ Specifically, <br>
       <div class="content has-text-justified" style="font-size: 16px;">
         <p>
           <br>
-          We evaluate <strong>SafeVision-8B</strong> on two new unsafe categories, <strong>Gambling</strong> and <strong>Cults</strong>, to test its ability to apply guardrails to unseen categories based on the policy prompt and text demonstrations, without prior exposure.  <strong>SafeVision</strong> performs comparably to GPT-4O and InternVL-2 (the backbone model), while significantly outperforming the other two guardrail models, which exhibit poor policy adherence and weak zero-shot transferability.
+          <strong>SafeVision-8B</strong> was evaluated on a new benchmark with 12 categories: <i>Normal, Adult, Adult Baby, Woman Breast, Sex Organ, Adult Cartoon, Grotesque, Sexy, Alcohol, ID Card, Negative Sign, SNS</i>. The benchmark included 50 real-world and 50 AI-synthesized images per category, totaling 1,200 images, with over 300 having multiple labels. SafeVision-8B achieved <strong>90.98%</strong> accuracy, outperforming GPT-4o (<strong>81.34%</strong>) and InternVL2_5-26B (<strong>76.11%</strong>). Specialized guardrail models LLaVAGuard and LlamaGuard3 scored <strong>25.03%</strong> and <strong>18.74%</strong>, respectively. SafeVision-8B excelled in most categories, as shown by AUPRC scores, highlighting its robustness on unseen categories.
         </p>
       </div>
       <h3 class="title is-4" style="font-size: 18px;">Ablation</h3>
@@ -234,8 +278,8 @@ Specifically, <br>
           <br>
           <ul>
             <li><strong>Effect of weighted loss ratio in post-training stage</strong>: We assess the impact of our custom-weighted loss function by varying the contribution of critical tokens. The weight ratio controls the proportion of the critical token's contribution to the total loss during post-training. As shown in Figure (<span style="color: blue;">a</span>), increasing the weight ratio <strong>initially boosts</strong> performance. However, when the ratio becomes too high, model performance <strong>declines</strong> due to overfitting.</li>
-            <li><strong>Influence of few-shot example format in in-context learning</strong>: We employ four formats: (1) category name only, (2) category name with an explanation, (3) category name with a brief explanation in JSON, and (4) category name with a detailed explanation in JSON. As shown in Figure (<span style="color: blue;">b</span>), compared with GPT-4O and InternVL2, <strong>SafeVision-8B</strong>'s performance improves significantly with more detailed and structured examples. This suggests that comprehensive examples enhance <strong>SafeVision-8B</strong>'s understanding of novel categories, leading to better performance. Nonetheless, <strong>SafeVision-2B</strong> exhibits suboptimal performance across all four formats. A detailed analysis of the guardrail outputs reveals that <strong>SafeVision-2B</strong> tends to overfit to the predefined categories, consistently generating these categories even when presented with new definitions. Although the smaller parameter size of <strong>SafeVision-2B</strong> offers advantages in terms of faster inference and reduced deployment costs, this comes at the expense of its in-context learning capability, leading to diminished adaptability in novel scenarios.</li>
-            <li><strong>Impact of few-shot example number in in-context learning</strong>: We analyze how varying the number of examples (0 to 10) affects model performance. As shown in Figure (<span style="color: blue;">c</span>), the performance of GPT-4O and InternVL2 remains relatively stable across different example quantities, while <strong>SafeVision-2B</strong> continues to underperform. In contrast, <strong>SafeVision-8B</strong>'s performance generally improves with more examples, reaches its peak with four examples, and deteriorates when provided with too many demonstrations. This indicates that an excessive number may cause <strong>SafeVision-8B</strong> to overly focus on the examples, detracting from its ability to generalize to new categories.</li>
+            <li><strong>Influence of few-shot example format in in-context learning</strong>: We employ four formats: (1) category name only, (2) category name with an explanation, (3) category name with a brief explanation in JSON, and (4) category name with a detailed explanation in JSON. As shown in Figure (<span style="color: blue;">b</span>), compared with GPT-4o and InternVL2, <strong>SafeVision-8B</strong>'s performance improves significantly with more detailed and structured examples. This suggests that comprehensive examples enhance <strong>SafeVision-8B</strong>'s understanding of novel categories, leading to better performance. Nonetheless, <strong>SafeVision-2B</strong> exhibits suboptimal performance across all four formats. A detailed analysis of the guardrail outputs reveals that <strong>SafeVision-2B</strong> tends to overfit to the predefined categories, consistently generating these categories even when presented with new definitions. Although the smaller parameter size of <strong>SafeVision-2B</strong> offers advantages in terms of faster inference and reduced deployment costs, this comes at the expense of its in-context learning capability, leading to diminished adaptability in novel scenarios.</li>
+            <li><strong>Impact of few-shot example number in in-context learning</strong>: We analyze how varying the number of examples (0 to 10) affects model performance. As shown in Figure (<span style="color: blue;">c</span>), the performance of GPT-4o and InternVL2 remains relatively stable across different example quantities, while <strong>SafeVision-2B</strong> continues to underperform. In contrast, <strong>SafeVision-8B</strong>'s performance generally improves with more examples, reaches its peak with four examples, and deteriorates when provided with too many demonstrations. This indicates that an excessive number may cause <strong>SafeVision-8B</strong> to overly focus on the examples, detracting from its ability to generalize to new categories.</li>
             <li><strong>Effectiveness of self-refinement training</strong>: We applied self-refinement training to a subset of <strong>VisionHarm-500K</strong> over multiple epochs, tracking both the percentage of remaining data and <strong>SafeVision</strong>'s performance at each epoch. Figure (<span style="color: blue;">d</span>) shows that <strong>SafeVision</strong> experiences significant performance improvement during the first two epochs, with the percentage of removed data peaking in the second epoch. By the fourth epoch, the model's performance stabilizes, and the percentage of removed data gradually decreases to less than 1%.</li>
           </ul>
         </p>
